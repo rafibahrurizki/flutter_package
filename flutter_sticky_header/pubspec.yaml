@@ -13,15 +13,12 @@ dependencies:
   flutter:
     sdk: flutter
   value_layout_builder:
-    git:
-      url: https://github.com/andrianseptiadi/value_layout_builder.git
+    path: ../value_layout_builder
 
- 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   sliver_tools:
-    git:
-      url: https://github.com/andrianseptiadi/sliver_tools.git
+    path: ../sliver_tools
 
 
