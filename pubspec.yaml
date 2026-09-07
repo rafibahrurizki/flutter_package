@@ -1,0 +1,32 @@
+name: flutter_package
+description: A bundled collection of curated Flutter packages, re-exported as a single dependency.
+version: 1.0.0
+publish_to: 'none'
+
+environment:
+  sdk: '>=3.10.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  pinput:
+    path: Pinput
+  calendar_date_picker2:
+    path: calendar_date_picker2
+  encrypt:
+    path: encrypt
+  english_words:
+    path: english_words
+  flutter_sticky_header:
+    path: flutter_sticky_header
+  html_unescape:
+    path: html_unescape
+  reorderable_grid:
+    path: reorderable_grid
+  scroll_datetime_picker:
+    path: scroll_datetime_picker
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter

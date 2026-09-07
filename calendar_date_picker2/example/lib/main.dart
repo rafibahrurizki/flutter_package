@@ -1,6 +1,5 @@
 import 'package:calendar_date_picker2/calendar_date_picker2.dart';
 import 'package:material_ui/material_ui.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
 
 final today = DateUtils.dateOnly(DateTime.now());
 
@@ -18,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      localizationsDelegates: GlobalMaterialLocalizations.delegates,
+      // localizationsDelegates: GlobalMaterialLocalizations.delegates,
       supportedLocales: const [
         Locale('en', ''),
         Locale('zh', ''),

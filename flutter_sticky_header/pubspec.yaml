@@ -20,5 +20,3 @@ dev_dependencies:
     sdk: flutter
   sliver_tools:
     path: ../sliver_tools
-
-
