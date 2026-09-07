@@ -1,0 +1,36 @@
+name: Publish to pub.dev
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+on:
+  push:
+    tags:
+      - "v[0-9]+.[0-9]+.[0-9]+*"
+
+jobs:
+  publish:
+    name: "Publish to pub.dev"
+    permissions:
+      id-token: write # This is required for authentication using OIDC
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup dart
+        uses: dart-lang/setup-dart@v1
+        with:
+          sdk: "3.6.0"
+
+      - name: Setup flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: "3.27.0"
+
+      - name: Update dependencies
+        run: flutter pub get
+
+      - name: Publish
+        run: flutter pub publish --force

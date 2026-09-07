@@ -1,0 +1,27 @@
+name: flutter_sticky_header
+description: Flutter implementation of sticky headers as a sliver. Use it in a CustomScrollView.
+publish_to: 'none'
+version: 0.8.0
+homepage: https://github.com/letsar/flutter_sticky_header
+
+environment:
+  sdk: '>=3.10.0 <4.0.0'
+
+dependencies:
+  cupertino_ui: ^1.0.2
+  material_ui: ^1.1.1
+  flutter:
+    sdk: flutter
+  value_layout_builder:
+    git:
+      url: https://github.com/andrianseptiadi/value_layout_builder.git
+
+ 
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  sliver_tools:
+    git:
+      url: https://github.com/andrianseptiadi/sliver_tools.git
+
+

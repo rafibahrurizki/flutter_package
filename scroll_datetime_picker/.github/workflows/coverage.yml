@@ -1,0 +1,50 @@
+name: Code Coverage
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+on:
+  push:
+    branches:
+      - release/*
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  coverage:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📚 Git Checkout
+        uses: actions/checkout@v4
+
+      - name: 🐦 Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: "3.27.0"
+          
+      - name: 📦 Install Dependencies
+        run: |
+          flutter pub global activate very_good_cli
+          very_good packages get --recursive
+    
+      - name: Run Tests
+        run: |
+          very_good test -j 4  --optimization --coverage --test-randomize-ordering-seed random
+    
+      - name: Setup Lcov
+        uses: hrishikesh-kadam/setup-lcov@v1
+    
+      - name: Cleaning lcov.info
+        run: |
+          lcov --remove ./coverage/lcov.info \
+          -o ./coverage/lcov.info
+     
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v3
+        with:
+          files: "./coverage/lcov.info"
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
