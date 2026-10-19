@@ -10,10 +10,6 @@ dependencies:
   flutter:
     sdk: flutter
 
-  pinput:
-    path: Pinput
-  calendar_date_picker2:
-    path: calendar_date_picker2
   encrypt:
     path: encrypt
   english_words:

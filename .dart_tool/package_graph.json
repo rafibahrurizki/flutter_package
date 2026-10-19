@@ -7,13 +7,11 @@
       "name": "flutter_package",
       "version": "1.0.0",
       "dependencies": [
-        "calendar_date_picker2",
         "encrypt",
         "english_words",
         "flutter",
         "flutter_sticky_header",
         "html_unescape",
-        "pinput",
         "reorderable_grid",
         "scroll_datetime_picker"
       ],
@@ -53,6 +51,7 @@
       "name": "reorderable_grid",
       "version": "1.0.13",
       "dependencies": [
+        "cupertino_ui",
         "flutter",
         "material_ui"
       ]
@@ -88,25 +87,6 @@
         "clock",
         "crypto",
         "pointycastle"
-      ]
-    },
-    {
-      "name": "calendar_date_picker2",
-      "version": "3.0.0",
-      "dependencies": [
-        "cupertino_ui",
-        "flutter",
-        "intl",
-        "material_ui"
-      ]
-    },
-    {
-      "name": "pinput",
-      "version": "6.0.2",
-      "dependencies": [
-        "cupertino_ui",
-        "flutter",
-        "material_ui"
       ]
     },
     {
@@ -190,7 +170,7 @@
     },
     {
       "name": "material_ui",
-      "version": "1.1.1",
+      "version": "1.7.0",
       "dependencies": [
         "collection",
         "cupertino_ui",
@@ -212,7 +192,7 @@
     },
     {
       "name": "cupertino_ui",
-      "version": "1.0.2",
+      "version": "1.1.3",
       "dependencies": [
         "collection",
         "flutter",
@@ -320,11 +300,6 @@
       ]
     },
     {
-      "name": "vector_math",
-      "version": "2.4.2",
-      "dependencies": []
-    },
-    {
       "name": "term_glyph",
       "version": "1.2.2",
       "dependencies": []
@@ -336,6 +311,11 @@
         "source_span",
         "string_scanner"
       ]
+    },
+    {
+      "name": "vector_math",
+      "version": "2.4.3",
+      "dependencies": []
     },
     {
       "name": "typed_data",
@@ -370,7 +350,7 @@
     },
     {
       "name": "vm_service",
-      "version": "15.3.0",
+      "version": "15.4.0",
       "dependencies": []
     }
   ],
