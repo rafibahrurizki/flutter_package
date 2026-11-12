@@ -9,10 +9,10 @@ environment:
   sdk: ">=3.10.0 <4.0.0"
 
 dependencies:
-  cupertino_ui: ^1.1.4
+  cupertino_ui: ^1.1.6
   flutter:
     sdk: flutter
-  material_ui: ^1.8.0
+  material_ui: ^1.11.0
 
 dev_dependencies:
   flutter_test:
