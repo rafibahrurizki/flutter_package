@@ -254,6 +254,38 @@
       "dependencies": []
     },
     {
+      "name": "material_ui",
+      "version": "1.11.1",
+      "dependencies": [
+        "collection",
+        "cupertino_ui",
+        "flutter",
+        "flutter_localizations",
+        "intl",
+        "material_color_utilities",
+        "vector_math"
+      ]
+    },
+    {
+      "name": "flutter_localizations",
+      "version": "0.0.0",
+      "dependencies": [
+        "flutter",
+        "intl",
+        "path"
+      ]
+    },
+    {
+      "name": "cupertino_ui",
+      "version": "1.1.7",
+      "dependencies": [
+        "collection",
+        "flutter",
+        "flutter_localizations",
+        "intl"
+      ]
+    },
+    {
       "name": "asn1lib",
       "version": "1.6.8",
       "dependencies": []
@@ -279,25 +311,6 @@
       ]
     },
     {
-      "name": "cupertino_ui",
-      "version": "1.1.6",
-      "dependencies": [
-        "collection",
-        "flutter",
-        "flutter_localizations",
-        "intl"
-      ]
-    },
-    {
-      "name": "flutter_localizations",
-      "version": "0.0.0",
-      "dependencies": [
-        "flutter",
-        "intl",
-        "path"
-      ]
-    },
-    {
       "name": "term_glyph",
       "version": "1.2.2",
       "dependencies": []
@@ -308,19 +321,6 @@
       "dependencies": [
         "source_span",
         "string_scanner"
-      ]
-    },
-    {
-      "name": "material_ui",
-      "version": "1.11.0",
-      "dependencies": [
-        "collection",
-        "cupertino_ui",
-        "flutter",
-        "flutter_localizations",
-        "intl",
-        "material_color_utilities",
-        "vector_math"
       ]
     },
     {
